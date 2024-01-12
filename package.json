@@ -4,8 +4,8 @@
   "description": "NodeJS Rest API Backend Service",
   "main": "server.js",
   "scripts": {
-    "test": "jest --coverage",
-    "start": "node server"
+    "dev": "node server",
+    "test": "jest --coverage"
   },
   "keywords": [
     "NodeJS",
