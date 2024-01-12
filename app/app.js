@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const userRouter = require("../router/userRouter");
 
 const app = express();
 // use middleware to from our contract for incoming json payloads ONLY !!!
@@ -28,6 +29,7 @@ app.get("/", (req, res) => {
 });
 
 // add routes
+app.use("/users", userRouter);
 
 // bad url or error we can handle with middleware
 app.use((req, res, next) => {
